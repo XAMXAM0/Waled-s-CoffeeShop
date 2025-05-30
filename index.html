@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Waled's CoffeeShop</title>
+    <link rel="icon" href="WALED COFEESHOP (1)-fotor-2025050184537.png" type="image/png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  
+
+  <nav>
+    
+      
+    </div>
+   <nav class="navbar">
+    <div class="logo">☕ Waled's CoffeeShop</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  </nav>
+  
+       
+  <div class="carouselbackground" style="background-color: black;" id="home"></div> 
+  <div class="carousel">
+    <div class="slides">
+      <img src="slide 1.jpg" alt="Gambar 1" />
+      <img src="slide 2.jpg" alt="Gambar 2" />
+      <img src="slide 3.jpg" alt="Gambar 3" />
+    </div>
+    <button class="nav-btn prev">&#10094;</button>
+    <button class="nav-btn next">&#10095;</button>
+  </div>
+  <br>
+  </div>
+
+<div class="cookie-banner" id="cookieBanner">
+    <p>Website ini menggunakan cookies untuk memberikan pengalaman terbaik. Dengan melanjutkan, Anda menyetujui penggunaan cookies.</p>
+    <button onclick="acceptCookies()">Accept</button>
+  </div>
+  
+  <br>
+  <br>
+<div class="container123" style="">
+  <h2 class="title123"><i class="fa-solid fa-play"></i> Hiburan Music </h2>
+  <div class="song-list123" id="songList123">
+    <label class="song-card123">
+      <img src="luther.jpg" class="song-cover123" alt="Cover Lagu 1">
+      <div class="song-info123">
+        <p class="song-title123">luther</p>
+      </div>
+      <input type="checkbox" class="checkbox123" value="Kendrick Lamar - luther (Lyrics) ft. SZA.mp3" />
+    </label>
+
+    <label class="song-card123">
+      <img src="ciko.jpg" class="song-cover123" alt="Cover Lagu 2">
+      <div class="song-info123">
+        <p class="song-title123">lateeya</p>
+      </div>
+      <input type="checkbox" class="checkbox123" value="lateeya - lullaby (cover by isabel tran).mp3" />
+    </label>
+
+    <label class="song-card123">
+      <img src="ciko.jpg" class="song-cover123" alt="Cover Lagu 3">
+      <div class="song-info123">
+        <p class="song-title123">Labour</p>
+      </div>
+      <input type="checkbox" class="checkbox123" value="Paris Paloma - Labour.mp3" />
+    </label>
+
+    <label class="song-card123">
+      <img src="ciko.jpg" class="song-cover123" alt="Cover Lagu 3">
+      <div class="song-info123">
+        <p class="song-title123">Blue</p>
+      </div>
+      <input type="checkbox" class="checkbox123" value="Yung Kai - Blue.mp3" />
+    </label>
+  </div>
+
+  <button class="button123" onclick="putarLaguTerpilih123()">🎶 Putar Lagu Terpilih</button>
+  <audio id="audioPlayer123" class="audio123" controls></audio>
+</div>
+      
+        
+
+
+
+
+
+     
+      <br>
+      <br>
+      <br>
+      <br>
+      <br id="about">
+      <br>
+      <br>
+      <h1 data-aos="zoom-in-up" data-aos-duration="1500" id="about"> Tentang Kopi Kami</h1>
+      <div class="garis-bawah" data-aos="zoom-in-up" data-aos-duration="1500" ></div>
+      <div class="section">
+        <div class="text-content">
+          
+          
+          
+          <p class="tl-paragraph" data-aos="fade-right" data-aos-duration="1500">
+            Selamat datang di dunia kopi kami — sebuah perjalanan rasa yang dimulai dari biji pilihan, tangan-tangan terampil petani lokal, hingga menjadi secangkir kopi yang siap dinikmati dengan penuh kebanggaan.
+            </p>
+            <p class="tl-paragraph" data-aos="fade-right" data-aos-duration="1500">
+            Kami mempersembahkan kopi yang tidak hanya berkualitas tinggi, tetapi juga mencerminkan identitas dan kekayaan alam Indonesia yang begitu beragam.
+            </p>
+            <p class="tl-paragraph" data-aos="fade-right" data-aos-duration="1500">
+            Setiap produk yang kami hadirkan adalah hasil dari proses kurasi yang ketat, mulai dari pemilihan origin, metode pengolahan, hingga teknik sangrai yang kami kembangkan secara khusus untuk menjaga keaslian rasa.
+            </p>
+            <p class="tl-paragraph" data-aos="fade-right" data-aos-duration="1500">
+            Kami percaya bahwa kopi bukan hanya soal rasa, tapi juga tentang cerita, hubungan, dan nilai yang kami bawa dari kebun hingga ke cangkir Anda.
+            </p>
+            <p class="tl-paragraph" data-aos="fade-right" data-aos-duration="1500">
+            Dengan kopi kami, kami ingin mengajak Anda menikmati lebih dari sekadar minuman—kami ingin menghubungkan Anda dengan warisan rasa yang tumbuh dari tanah nusantara.
+            </p>
+            
+        </div>
+        <div class="image-content">
+          <img src="biji kopi.png" alt="Biji Kopi Coffee Toffee" data-aos="fade-left" data-aos-duration="1500">
+        </div>
+      </div>
+
+      <div class="wrapper-luar">
+        <div class="kotak-gambar">
+          <img src="owner.png" alt="Biji Kopi" data-aos="fade-left" data-aos-duration="1500">
+        </div>
+        <div class="konten-tulisan">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          
+          <p class="tl-paragraph" data-aos="fade-right" data-aos-duration="1500">
+            Kopi kami diracik dari biji-biji pilihan yang kami seleksi secara langsung dari petani lokal di berbagai daerah penghasil kopi terbaik di Indonesia, mulai dari Aceh Gayo, Toraja, hingga Bajawa.
+            </p>
+            <p class="tl-paragraph" data-aos="fade-right" data-aos-duration="1500">
+            Setiap biji kopi yang kami gunakan telah melalui proses pascapanen yang ketat dan penyangraian dengan profil rasa yang disesuaikan untuk menjaga karakter unik dari tiap origin.
+            </p>
+            <p class="tl-paragraph" data-aos="fade-right" data-aos-duration="1500">
+            Kami menawarkan beragam varian kopi mulai dari 100% arabika single origin, blend arabika-robusta, hingga kopi house blend yang kami kembangkan khusus untuk cita rasa khas kami.
+            </p>
+            <p class="tl-paragraph" data-aos="fade-right" data-aos-duration="1500">
+            Selain kualitas rasa, kami juga mengedepankan kemitraan berkelanjutan dengan petani kopi sebagai bagian dari komitmen kami terhadap praktik bisnis yang adil dan beretika.
+            </p>
+            <p class="tl-paragraph" data-aos="fade-right" data-aos-duration="1500">
+            Melalui kopi kami, kami ingin menghadirkan pengalaman minum kopi yang autentik dan berkesan, sembari memperkenalkan kekayaan cita rasa kopi nusantara kepada dunia.
+            </p>
+            
+        </div>
+      </div>
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+    <br id="menu">
+    <br>
+    <br>
+      <h1 data-aos="flip-up" data-aos-duration="2000" >Menu</h1>
+      <hr>
+      <br>
+      <br>
+      <div class="menu-wrapper" >
+        <div class="menu-card">
+          <img src="Espresso.jpg" alt="Big Mac" data-aos="flip-up" data-aos-duration="2000">
+          <h4>Espresso</h4>
+            <div class="menu-price">Rp 10.000</div>
+        </div>
+        <div class="menu-card">
+          <img src="Americano.jpg" alt="PaNas 1" data-aos="flip-down" data-aos-duration="2000">
+          <h4>Americano</h4>
+            <div class="menu-price">Rp 19.000</div>
+        </div>
+        <div class="menu-card">
+          <img src="Cappuccino.jpg" data-aos="fade-right" data-aos-duration="2000">
+          <h4>Cappuccino</h4>
+            <div class="menu-price">Rp 10.000</div>
+        </div>
+        <div class="menu-card">
+          <img src="Latte.jpg" alt="PaNas Spesial" data-aos="fade-left" data-aos-duration="2000">
+          <h4>Latte</h4>
+            <div class="menu-price">Rp 14.000</div>
+        </div>
+        <div class="menu-card">
+          <img src="Mocha.jpg" alt="PaNas Spesial" data-aos="zoom-in" data-aos-duration="2000">
+          <h4>Mocha</h4>
+            <div class="menu-price">Rp 17.000</div>
+        </div>
+        <div class="menu-card">
+          <img src="Macchiato.jpg" alt="PaNas Spesial" data-aos="zoom-out" data-aos-duration="2000">
+          <h4>Macchiato</h4>
+            <div class="menu-price">Rp 14.000</div>
+        </div>
+        <div class="menu-card">
+          <img src="Flat White.jpg" alt="PaNas Spesial" data-aos="zoom-in-up" data-aos-duration="2000">
+          <h4>Flat White</h4>
+            <div class="menu-price">Rp 7.000</div>
+        </div>
+        <div class="menu-card">
+          <img src="Affogato.png" alt="PaNas Spesial" data-aos="zoom-in-down" data-aos-duration="2000">
+          <h4>Affogato</h4>
+            <div class="menu-price">Rp 14.000</div>
+        </div>
+        <div class="menu-card">
+          <img src="Cold Brew.jpg" alt="PaNas Spesial" data-aos="zoom-in-left" data-aos-duration="2000">
+          <h4>Cold Brew</h4>
+            <div class="menu-price">Rp 9.000</div>
+        </div>
+        <div class="menu-card">
+          <img src="Ristretto.jpg" alt="PaNas Spesial" data-aos="zoom-in-right" data-aos-duration="2000">
+          <h4>Ristretto</h4>
+            <div class="menu-price">Rp 8.000</div>
+        </div>
+      
+      </div>
+    
+      
+      
+      
+
+
+
+
+
+
+
+      <br>
+      <br>
+      <br>
+      <br><br>
+      
+      <br>
+      <br>
+      <br><br><br>
+      
+      
+      <br>
+      <br><br>
+      <br>
+      <br>
+      <br id="location">
+      <br>
+      <div class="judul-section">
+    <h1 data-aos="fade-down" data-aos-duration="2500"> Location </h1>
+    <div class="garis-bawah"></div>
+  </div>
+      <br>
+     
+      
+      <div class="map">
+        <br>
+        <br>
+        
+    <div id="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=4.809448,97.796652&hl=id&z=16&output=embed"
+            height="100%" 
+            frameborder="0" 
+            style="border:0;width:100% !important;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+    <br>
+    <br>
+  </div>
+    
+    
+    <footer style="background-color: #7B4B3A; color: white; padding: 40px 20px;">
+  <div style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width: 1200px; margin: auto;">
+    
+    <!-- Visi Sekolah -->
+    <div style="flex: 1; min-width: 300px; margin-bottom: 20px;">
+      <img src="WALED COFEESHOP (1)-fotor-2025050184537.png" alt="Logo" style="height: 60px;">
+      <h3 style="margin-top: 20px;"> Waled's CoffeeShop</h3>
+      <p style="color: #ccc;">
+        Dari biji kopi Nusantara untuk secangkir kenangan hangat.
+Terima kasih sudah menjadi bagian dari perjalanan rasa kami.
+      </p>
+    </div>
+
+    <!-- Info -->
+    <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+      <h2 style="color: #000000">Info</h2>
+      <p><strong>Lokasi: Jl. Pertamina Dsn. Benteng , Aceh | Buka setiap hari 07.00 – 22.00</strong></p>
+    </div>
+
+    <!-- Contact -->
+    <div style="flex: 1; min-width: 300px; margin-bottom: 20px;">
+      <h2 style="color: #000000">Contact us</h2>
+      <p>Pereulak</p>
+      <p>📞 Phone: 082387845949</p>
+      <p>📧 E-mail: <a href="" style="color: #432d27">qaisarnabilalfathan@gmail.com</a></p>
+    </div>
+  </div>
+
+  <div style="text-align: center; padding: 20px; background-color: color: white">
+    Copyright © 2025 - Developed by <span style="color: #432d27;">ZENN & XAM</span>
+  </div>
+</footer>
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  <script>
+  let daftarLagu123 = [];
+  let indeksLagu123 = 0;
+  const player123 = document.getElementById("audioPlayer123");
+
+  function putarLaguTerpilih123() {
+    const checkbox123 = document.querySelectorAll('#songList123 input[type="checkbox"]:checked');
+    daftarLagu123 = Array.from(checkbox123).map(cb => cb.value);
+    indeksLagu123 = 0;
+
+    if (daftarLagu123.length === 0) {
+      alert("Silakan pilih minimal satu lagu.");
+      return;
+    }
+
+    player123.src = daftarLagu123[indeksLagu123];
+    player123.play();
+  }
+
+  player123.addEventListener("ended", () => {
+    indeksLagu123++;
+    if (indeksLagu123 < daftarLagu123.length) {
+      player123.src = daftarLagu123[indeksLagu123];
+      player123.play();
+    }
+  });
+</script>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <script>
+
+  
+    // Tampilkan banner jika belum disetujui sebelumnya
+    window.onload = function () {
+      if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookieBanner').classList.add('show');
+      }
+    };
+
+    // Sembunyikan dan simpan ke localStorage
+    function acceptCookies() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookieBanner').classList.remove('show');
+    }
+  
+
+
+
+
+
+
+
+
+
+
+      const slides = document.querySelector('.slides');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    let index = 0;
+    const totalSlides = slides.children.length;
+
+    function showSlide(i) {
+      index = (i + totalSlides) % totalSlides;
+      slides.style.transform = `translateX(-${index * 100}vw)`;
+    }
+
+    prev.addEventListener('click', () => showSlide(index - 1));
+    next.addEventListener('click', () => showSlide(index + 1));
+
+    // Auto slide every 3 seconds
+    setInterval(() => {
+      showSlide(index + 1);
+    }, 3000);
+
+
+
+
+
+
+    
+      // Buat dots
+      for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (i === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => {
+          currentIndex = i;
+          updateSlider();
+          restartAutoSlide();
+        });
+        dotsContainer.appendChild(dot);
+      }
+    
+      function updateSlider() {
+        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        document.querySelectorAll('.dot').forEach((dot, i) => {
+          dot.classList.toggle('active', i === currentIndex);
+        });
+        slideEls.forEach((slide, i) => {
+          slide.classList.toggle('active', i === currentIndex);
+        });
+      }
+    
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+      }
+    
+      function startAutoSlide() {
+        autoSlideInterval = setInterval(nextSlide, 5000);
+      }
+    
+      function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+      }
+    
+      function restartAutoSlide() {
+        stopAutoSlide();
+        startAutoSlide();
+      }
+    
+      // Geser manual (drag dengan mouse / swipe)
+      slides.addEventListener('mousedown', (e) => {
+        startX = e.pageX;
+        isDragging = true;
+        stopAutoSlide();
+      });
+    
+      slides.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        const delta = e.pageX - startX;
+        slides.style.transform = `translateX(-${currentIndex * 100 - (delta / window.innerWidth) * 100}%)`;
+      });
+    
+      slides.addEventListener('mouseup', (e) => {
+        if (!isDragging) return;
+        const delta = e.pageX - startX;
+        if (delta > 50 && currentIndex > 0) currentIndex--;
+        else if (delta < -50 && currentIndex < totalSlides - 1) currentIndex++;
+        isDragging = false;
+        updateSlider();
+        restartAutoSlide();
+      });
+    
+      slides.addEventListener('mouseleave', () => {
+        if (isDragging) {
+          isDragging = false;
+          updateSlider();
+          restartAutoSlide();
+        }
+      });
+    
+      // Touch support (untuk HP)
+      slides.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        stopAutoSlide();
+      });
+    
+      slides.addEventListener('touchmove', (e) => {
+        const delta = e.touches[0].clientX - startX;
+        slides.style.transform = `translateX(-${currentIndex * 100 - (delta / window.innerWidth) * 100}%)`;
+      });
+    
+      slides.addEventListener('touchend', (e) => {
+        const endX = e.changedTouches[0].clientX;
+        const delta = endX - startX;
+        if (delta > 50 && currentIndex > 0) currentIndex--;
+        else if (delta < -50 && currentIndex < totalSlides - 1) currentIndex++;
+        updateSlider();
+        restartAutoSlide();
+      });
+    
+      updateSlider();
+      startAutoSlide();
+
+
+      document.addEventListener('scroll', function() {
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach((element) => {
+        const elementBottom = element.getBoundingClientRect().bottom;
+        const screenBottom = window.innerHeight;
+        if (elementBottom < screenBottom) {
+            element.classList.add('visible');
+        }
+    });
+});
+
+
+
+
+
+
+
+    </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+
+
+
+
+
+
+</body>
+</html>

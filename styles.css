@@ -1,0 +1,626 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    
+     font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-image: url();
+    
+    
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5d4037;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff3e0;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      position: relative;
+      font-size: 18px;
+}
+
+.nav-links li a:hover {
+  background-color: #8edafe;
+  color: #3e2723;
+}
+
+
+ .nav-links a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+.nav-links a:hover {
+      background-color: #7E5E52;
+      transform: scale(1.1);
+    }
+    .navbar-links a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #fff3e0;
+  cursor: pointer;
+}
+
+.hero {
+  background: url('https://source.unsplash.com/1600x600/?coffee') center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #5d4037;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+main {
+    flex: 3;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background: #e2e2e2;
+    margin-left: 20px;
+}
+
+
+
+.main2 {
+    flex: 3;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.scrollable {
+    width: 100px;          /* Set the width of the scrollable area */
+    height: 100px;         /* Set the height of the scrollable area */
+    overflow-x: auto;      /* Enable horizontal scrolling */
+    overflow-y: hidden;    /* Disable vertical scrolling */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    padding: 10px;         /* Optional: Add some padding */
+}
+
+/* Custom Scrollbar Styles */
+.scrollable::-webkit-scrollbar {
+    height: 20px; /* Increased height of the horizontal scrollbar */
+}
+
+.scrollable::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.scrollable::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the thumb on hover */
+}
+
+
+
+
+#map-container {
+    width: 100%;
+    height: 600px; /* Ubah tinggi sesuai keinginan */
+}
+.map {
+    background-color: #FFF5EE
+}
+
+
+
+h1 {
+   ;
+text-align: center;
+font-size: 40px;
+}
+
+
+
+
+   .menu-price {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2c3e50;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+ .menu-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-bottom: 30px;
+      }
+      .menu-card {
+        width: 200px;
+      }
+      .menu-card img {
+        width: 100%;
+        border-radius: 12px;
+      }
+      .menu-card h4 {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .section {
+        padding: 60px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      .text-content {
+        max-width: 600px;
+        padding: 20px;
+      }
+      .text-content h2 {
+        color: #888;
+        font-weight: bold;
+        font-size: 24px;
+      }
+      .text-content h1 {
+        font-size: 40px;
+        margin: 0;
+        font-weight: bold;
+      }
+      
+      
+      .text-content h3 {
+        color: #888;
+        font-weight: bold;
+        font-size: 22px;
+      }
+      .text-content p {
+        line-height: 1.7;
+        font-size: 16px;
+      }
+      .image-content {
+        max-width: 600px;
+        padding: 20px;
+      }
+      .image-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .wrapper-luar {
+        display: flex;
+        align-items: flex-start;
+        padding: 40px;
+      }
+      .kotak-gambar {
+        flex: 1;
+        padding-right: 30px;
+        
+        
+      }
+      .kotak-gambar img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      .konten-tulisan {
+        flex: 2;
+        padding-bottom: 100px;
+      }
+      .judul-kecil {
+        color: #888;
+      }
+      .judul-besar {
+        color: #000;
+      }
+      .isi-paragraf {
+        line-height: 1.6;
+        color: #333;
+      }
+
+      footer {
+      background-color: #222;
+      color: #f1f1f1;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer .footer-links a {
+      color: #f1f1f1;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    footer .footer-links a:hover {
+      color: #00bcd4;
+    }
+
+    footer .social-icons {
+      margin-top: 20px;
+    }
+
+    footer .social-icons a {
+      color: #f1f1f1;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+
+    footer .social-icons a:hover {
+      color: #00bcd4;
+    }
+
+    footer .copyright {
+      margin-top: 25px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      footer .footer-links a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+   
+    .judul-section {
+      text-align: center;
+      font-family: sans-serif;
+      margin-top: 50px;
+    }
+
+    .judul-section h2 {
+      color: #2d4c77; /* warna biru tua */
+      font-weight: bold;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .garis-bawah {
+      width: 140px;
+      height: 4px;
+      background-color: #e0e0e0;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .garis-bawah::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 4px;
+      background-color: #29b6f6; /* biru terang di tengah */
+    }
+        .carousel {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%; /* Karena ada 3 gambar */
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.3);
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px 15px;
+      z-index: 10;
+    }
+
+    .prev {
+      left: 20px;
+    }
+
+    .next {
+      right: 20px;
+    }
+
+    .content p {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+
+    
+
+
+
+
+
+
+    
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #4E342E; /* warna coklat tua */
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+      transition: transform 0.4s ease-in-out;
+      transform: translateY(100%);
+      z-index: 999;
+    }
+
+    .cookie-banner.show {
+      transform: translateY(0);
+    }
+
+    .cookie-banner p {
+      margin: 0;
+      max-width: 80%;
+    }
+
+    .cookie-banner button {
+      background-color: #8D6E63;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cookie-banner button:hover {
+      background-color: #A1887F;
+    }
+
+
+
+
+
+
+     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+      .container123 {
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      max-width: 600px;
+      width: 100%;
+        margin: 0 auto;
+      
+     
+    }
+
+    .title123 {
+      text-align: center;
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      color: #2b2b2b;
+    }
+
+    .song-list123 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .song-card123 {
+      display: flex;
+      align-items: center;
+      background: #f9f9fb;
+      border-radius: 15px;
+      padding: 10px 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .song-card123:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+    }
+
+    .song-cover123 {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    .song-info123 {
+      flex-grow: 1;
+    }
+
+    .song-title123 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0;
+      color: #333;
+    }
+
+    .checkbox123 {
+      width: 20px;
+      height: 20px;
+      accent-color: #007bff;
+    }
+
+    .button123 {
+      background: linear-gradient(to right, #007bff, #4dabf7);
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 16px;
+      margin-top: 25px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .button123:hover {
+      background: linear-gradient(to right, #0056b3, #339af0);
+    }
+
+    .audio123 {
+      margin-top: 25px;
+      width: 100%;
+    }
+
+
+
+
+
+
+    
